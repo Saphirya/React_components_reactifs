@@ -1,11 +1,11 @@
-function Button({ onClick }) {
-  console.log(onClick);
+// function Button({ onClick }) {
+//   console.log(onClick);
 
-  return (
-    <button onClick={onClick} style={{ backgroundColor: "blue" }}>
-      Submit
-    </button>
-  );
-}
+//   return (
+//     <button onClick={onClick} style={{ backgroundColor: "blue" }}>
+//       Submit
+//     </button>
+//   );
+// }
 
-export default Button;
+// export default Button;
