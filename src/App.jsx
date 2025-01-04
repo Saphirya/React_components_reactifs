@@ -1,26 +1,18 @@
 import { useState } from "react";
-import Compteur from "./Compteur";
 
 function App() {
-  console.log("render App");
-
-  const [count, setCount] = useState(0);
-  const [showCount, setShowCount] = useState(true);
-
-  function handleClick() {
-    setCount(count + 1);
-    console.log(count);
-
-    setShowCount(!showCount);
-    console.log(showCount);
-  }
+  const [user, setUser] = useState({
+    name: "",
+    age: null,
+  });
 
   return (
-    <div className=" d-flex flex-column justify-content-center align-items-center p-20">
-      <button onClick={handleClick} from="App">
-        Submit {showCount && <span> {count}</span>}
-      </button>
-      <Compteur />
+    <div className="d-flex flex-column justify-content-center align-items-center p-20">
+      <form className="d-flex flex-column card p-20">
+        <input className="mb-20" type="text" placeholder="Nom" />
+        <input className="mb-20" type="Number" />
+        <button>Submit</button>
+      </form>
     </div>
   );
 }
